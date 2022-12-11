@@ -7,9 +7,4 @@ pipeline {
          }
       }
    }
-   post {
-       always {
-           junit 'latest_test_results.xml'
-       }
-   }
 }
