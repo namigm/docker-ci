@@ -3,7 +3,8 @@ pipeline {
    stages {
       stage('Tests') {
          steps {
-            sh '/bin/bash -c "pytest"'
+            sh '''docker build -t testing-ci:01 .
+'''
          }
       }
    }
